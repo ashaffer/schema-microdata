@@ -66,9 +66,7 @@ module.exports = function($) {
         parentItem[name] = (parentItem[name] || []).concat(item);
       } else
         root.push(item);
-    }
-
-    if(name) {
+    } else if(name) {
       item[name] = value($(el));
     }
   });
