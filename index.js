@@ -61,6 +61,7 @@ module.exports = function($) {
     // it should always be correct.
     if(el === container) {
       var parent = closestItemscope(container.parent);
+      item._type = el.attribs.itemtype;
       if(parent) {
         var parentItem = lookup(parent);
         parentItem[name] = (parentItem[name] || []).concat(item);

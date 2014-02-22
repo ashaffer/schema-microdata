@@ -26,6 +26,7 @@ describe('schema-microdata', function() {
     it('should annotate work', function() {
       var res = schema(microdataHtml);
       expect(res[0]).to.eql({
+        _type: 'http://n.whatwg.org/work',
         work: 'http://foolip.org/microdatajs/',
         title: 'MicrodataJS',
         author: 'Philip Jägenstedt',
